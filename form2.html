@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+</head>
+<body id="body" class="container">
+    <div id="formdiv" class="row">
+        <div id="sec1" class="row">
+            <div class="col-md-6">
+                <h4 class="col-8 offset-2 pt-3">Choose form type</h4>
+                <select name="" id="" class="col-8 offset-2">
+                    <option value="">Choose form type</option>
+                </select>
+            </div>
+            <div class="col-md-6 row">
+                <h4 class="col-sm-6 offset-2 pt-3 float-left">Choose form style</h4>
+                <button id="btnn" class="col-4 btn-danger h-md-50 mt-sm-5 mt-2 m-sm-0 m-3"><a href="">CREATE TEMPLATE</a></button>
+            </div>
+        </div>
+        <div id="headings" class="col-md-6">
+            <h4>Drag & drop components</h4>
+        </div>
+        <div id="headings" class="col-md-6">
+            <h4>Your form</h4>
+        </div>
+        <div id="navdiv">
+            <nav id="navbar">
+                <ul id="navul">
+                    <li><a href="Form.html" id="anchor" class="btn">Input</a></li>
+                    <li><a href="form2.html" id="anchor" class="btn">Radio/Checkboxes</a></li>
+                    <li><a href="form3.html" id="anchor" class="btn">Select</a></li>
+                    <li><a href="form4.html" id="anchor" class="btn">Additional</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <form action="" id="registrationform" class="form row col-md-6 float-left">
+            <h4 class="col-md-10">Registration Form</h4>
+            <div class="col-md-10">
+                <label for="" class=" offset-1">Gender :</label>
+            <label for="">Male</label>
+            <input type="radio" name="gender">
+            <label for="">Female</label>
+            <input type="radio" name="gender">
+            </div>
+            <div class="col-md-10">
+                <label for="" class="col-10 offset-1">Name : </label>
+            <input type="name" name="" id="allinputs" class="col-10 offset-1" placeholder="Enter Your Name" required oninvalid="alert('Please Enter Your Name')" onfocus="focusFunction(this)" onblur="blurFunction(this)">
+            </div>
+            
+            <div class="col-md-10">
+                <label for="" class="col-10 offset-1">Password :</label>
+            <input type="password" class="col-10 offset-1" name="" id="" placeholder="Enetr Password" required oninvalid="alert('Please Enter Your Password')" onfocus="focusFunction(this)" onblur="blurFunction(this)">
+            </div>
+            
+            <div class="col-md-10">
+                <label for="" class="col-10 offset-1">Email :</label>
+            <input type="email" name="" id="" class="col-10 offset-1" placeholder="abc@gmail.com" required oninvalid="alert('Please Enter Your E-mail')" onfocus="focusFunction(this)" onblur="blurFunction(this)">
+            </div>
+
+            <div class="col-md-10">
+                <label for="" class="offset-1">City :</label>
+            <select name="" id="" class="">
+                <optgroup label="City">
+                    <option value="">LHR</option>
+                    <option value="">ISB</option>
+                    <option value="" selected>FSD</option>
+                    <option value="">KRC</option>
+                </optgroup>
+            </select>
+            </div>
+            
+            
+            <div class="col-md-10">
+                <label for="" class="offset-1">File :</label>
+            <input type="file" name="" id="" class=" offset-1" onfocus="focusFunction(this)" onblur="blurFunction(this)">
+            </div>
+            
+            <div class="col-md-10">
+                    <label for="" class="offset-1">Agree With Terms?</label>
+            <input type="checkbox" name="" id="" onfocus="focusFunction(this)" onblur="blurFunction(this)">
+            <br>
+                <input type="submit" name="" id="" class="col-10 offset-1 btn-primary">
+            </div>
+        </form>
+        
+            <form action="" id="loginform" class="col-md-5 offset-md-1 float-right">
+                <h4 class="col-12">Sign In</h4>
+                <input type="email" name="" id="" placeholder="E-mail" class="col-8" onfocus="focusFunction(this)" onblur="blurFunction(this)" required oninvalid="alert('Please Enter Correct E-mail')">
+                <input type="password" name="" id="" placeholder="Password" class="col-8" onfocus="focusFunction(this)" onblur="blurFunction(this)" required oninvalid="alert('Password Incorrect')">
+                <div class="col-8 offset-2">
+                        <input type="checkbox" name="" id="checkbox" class="" onfocus="focusFunction(this)" onblur="blurFunction(this)">
+                        <label for="" class="">Remember Me</label>
+                        <a href="" class="col-6">Forgot Password?</a>
+                </div>
+                <input type="submit" name="" id="" value="SIGN IN" class="col-8 btn-primary">
+            </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
